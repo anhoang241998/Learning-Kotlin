@@ -1,5 +1,13 @@
 fun main() {
     // for loops
+    // for each
+    val names = listOf("Anne", "Peter", "Jeff")
+    for (name in names) {
+        print("name of each people ${name}, ")
+    }
+
+    println()
+
     // tang dan
     for (item in 1..10) {
         print("$item ->")
