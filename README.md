@@ -18,7 +18,7 @@ You can support the course by learning is this page: [Code4func.com](https://www
 - Install [Git](https://git-scm.com/)
 - Setup Github Client https://desktop.github.com/  or Source Tree https://www.sourcetreeapp.com/
 - Install [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
-- Update SDK and Tools https://developer.android.com/studio/intro/update.html?hl=es-419
+- Update Java Development Kit https://www.oracle.com/java/technologies/javase-downloads.html
 
 ## Resources for learning
 
