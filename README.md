@@ -1,4 +1,4 @@
-# Android Course in Kotlin
+# Kotlin Learning
 
 ![alt text](https://github.com/alejouribesanchez/androidCourseKotlin/blob/master/class_1/kotlin.png)
 
