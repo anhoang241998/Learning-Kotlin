@@ -1,5 +1,3 @@
-import java.net.URL
-
 fun main() {
     val book = BookRepoIml()
     println(book.table)
