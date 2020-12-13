@@ -12,9 +12,9 @@ fun main() {
     println(description)
 
     val (position, salary) = Programmer(
-            "Mobile Developer",
-            2000,
-            25
+            position = "Mobile Developer",
+            salary = 2000,
+            age = 25
     )
     println(position)
     println(salary)
