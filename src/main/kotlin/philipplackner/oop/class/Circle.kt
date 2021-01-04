@@ -1,4 +1,4 @@
-package philipplackner.oop
+package philipplackner.oop.`class`
 
 class Circle(val radius: Double) {
 

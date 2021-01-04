@@ -1,4 +1,4 @@
-package philipplackner.oop
+package philipplackner.oop.`class`
 
 fun main() {
     val rec = Rectangle(4.0, 7.0)

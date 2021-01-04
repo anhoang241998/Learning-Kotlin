@@ -1,4 +1,4 @@
-package philipplackner.oop
+package philipplackner.oop.`class`
 
 class Rectangle(
     val a: Double,
