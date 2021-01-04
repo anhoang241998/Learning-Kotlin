@@ -2,7 +2,7 @@ package philipplackner.oop.`class`
 
 class Circle(val radius: Double) {
 
-    val pi = 3.141592
+    private val pi = 3.141592
 
     init {
         println("Circle created with radius = $radius")
