@@ -4,6 +4,11 @@ class Rectangle(
     val a: Double,
     val b: Double
 ) {
+
+    constructor(a: Double) : this(a, a)
+
+    constructor(a: Int, b: Int) : this(a.toDouble(), b.toDouble())
+
     init {
         println("Rectangle created with a = $a and b = $b")
     }
