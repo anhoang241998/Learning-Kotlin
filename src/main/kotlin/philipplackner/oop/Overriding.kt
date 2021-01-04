@@ -12,6 +12,7 @@ fun main() {
 
     val maxAreaRectAndCircle = maxArea(rec, circle)
     val maxAreaRectCircleAndTriangle = maxArea(rec, circle, triangle)
+    println(maxArea(rec, circle, triangle))
     println("the maximum area of the rectangle and the circle is $maxAreaRectAndCircle")
     println("the maximum area of the rectangle, the circle and triangle is $maxAreaRectAndCircle")
 }
@@ -26,4 +27,14 @@ fun maxArea(shape1: Rectangle, shape2: Circle, shape3: Shape): Double {
     val maxAreaShape1Shape2 = maxArea(shape1, shape2)
     val areaShape3 = shape3.area()
     return if (maxAreaShape1Shape2 > areaShape3) maxAreaShape1Shape2 else areaShape3
+}
+
+fun maxArea(vararg shapes: Shape): Double {
+    var i = shapes.size - 1
+    var x = 0.0
+    while(i > 0) {
+        x += shapes[i].area()
+        i -= 1
+    }
+    return x
 }

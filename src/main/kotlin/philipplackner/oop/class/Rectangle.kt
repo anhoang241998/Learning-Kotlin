@@ -1,9 +1,11 @@
 package philipplackner.oop.`class`
 
+import philipplackner.oop.inheritance.Shape
+
 class Rectangle(
     val a: Double,
     val b: Double
-) {
+) : Shape() {
 
     constructor(a: Double) : this(a, a)
 
@@ -13,9 +15,9 @@ class Rectangle(
         println("Rectangle created with a = $a and b = $b")
     }
 
-    fun area() = a * b
+    override fun area() = a * b
 
-    fun perimeter() = 2 * a * b
+    override fun perimeter() = 2 * a * b
 
     fun isSquare() = a == b
 }

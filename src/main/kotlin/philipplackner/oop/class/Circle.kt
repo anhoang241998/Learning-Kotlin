@@ -1,6 +1,8 @@
 package philipplackner.oop.`class`
 
-class Circle(val radius: Double) {
+import philipplackner.oop.inheritance.Shape
+
+class Circle(val radius: Double) : Shape() {
 
     private val pi = 3.141592
 
@@ -10,7 +12,7 @@ class Circle(val radius: Double) {
         println("Circle perimeter is ${perimeter()}")
     }
 
-    fun area() = radius * radius * pi
+    override fun area() = radius * radius * pi
 
-    fun perimeter() = 2 * radius * pi
+    override fun perimeter() = 2 * radius * pi
 }

@@ -7,6 +7,8 @@ abstract class Shape(
         println("I am the super class")
     }
 
+    constructor(email: Int = 0) : this(email.toString())
+
     abstract fun area(): Double
 
     abstract fun perimeter(): Double
