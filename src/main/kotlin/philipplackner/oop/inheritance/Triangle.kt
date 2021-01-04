@@ -11,7 +11,11 @@ class Triangle(
         println("$name perimeter is ${perimeter()}")
     }
 
-    fun perimeter() = a + b + c
+    override fun perimeter() = a + b + c
+
+    override fun area(): Double {
+        return 5.0
+    }
 
 
 }
