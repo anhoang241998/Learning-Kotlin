@@ -2,7 +2,7 @@ package philipplackner.oop.inheritance
 
 abstract class Shape(
     var name: String
-) {
+){
 
     constructor(
         name: String,
