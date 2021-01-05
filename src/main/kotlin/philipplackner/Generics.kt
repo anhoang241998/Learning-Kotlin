@@ -8,6 +8,12 @@ fun main() {
     var customTriple = CustomTriple(3, "hello", true)
     customTriple.printTypes()
 
+    val list1 = mutableListOf(1, 2, 3)
+    val list2 = listOf(1, 2, 3)
+
+    println(doSomething1(4))
+
+
 }
 
 fun <T> List<T>.customFilter1(filterFunction: (T) -> (Boolean)): List<T> {
@@ -18,5 +24,22 @@ fun <T> List<T>.customFilter1(filterFunction: (T) -> (Boolean)): List<T> {
         }
     }
     return resultList
+}
+
+fun doSomething1(x: Int): List<Int> {
+    val list = mutableListOf<Int>()
+    var bool = false
+    for (i in 2..x) {
+        for (j in 2 until i) {
+            if (i % j == 0) {
+                bool = true
+            }
+        }
+        if (!bool) {
+            list.add(i)
+        }
+        bool = false
+    }
+    return list
 }
 
